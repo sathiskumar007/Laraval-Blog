@@ -1,0 +1,843 @@
+/* font */
+
+@font-face {
+    font-family: font;
+    src: url(font/Inter-Regular.ttf);
+}
+
+@font-face {
+    font-family: font1;
+    src: url(font/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: poppines;
+    src: url(font/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: regpop;
+    src: url(font/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: medium;
+    src: url(font/Inter-Medium.ttf);
+}
+
+@font-face {
+    font-family: semibold;
+    src: url(font/Inter-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: jua;
+    src: url(font/Jua-Regular.ttf);
+}
+
+/* font end */
+
+/* nav bar */
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration-style: none;
+}
+
+nav {
+    height: 80px;
+    width: 100%;
+    background-color: #441F13;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: sticky;
+    top: 20px;
+
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+}
+
+nav ul li {
+    list-style-type: none;
+    font-family: font;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(233, 231, 231);
+    font-size: 20px;
+
+}
+
+#ham-icon {
+    font-size: 28px;
+    display: none;
+}
+
+nav input {
+    display: none;
+}
+
+.logoo {
+    width: 50px;
+    height: 50px;
+    /* rotate: 345deg; */
+}
+
+.active{
+    color: gold;
+}
+
+/* navbar end */
+
+
+/* banner */
+.banner {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('./img/banner.png');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    gap: 20px;
+    /* z-index: -1; */
+}
+
+.banner-content {
+    position: absolute;
+    color: white;
+    text-align: center;
+    font-family: poppines;
+    font-size: clamp(0.9375rem, 0.6908rem + 1.3158vw, 1.875rem);
+}
+
+.banner-content h2 {
+    font-size: clamp(1.25rem, 0.7566rem + 2.6316vw, 3.125rem);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.banner-content p {
+    font-size: clamp(8px, 3vw, 20px);
+}
+
+.banner-content h2,
+p {
+    font-family: font1;
+
+}
+
+.banner-content button {
+    background-color: rgba(108, 4, 4, 0.867);
+    color: white;
+    font-family: font1;
+    padding: 11px 35px;
+    border-radius: 10px;
+    transition: 0.3s;
+    font-size: clamp(12px, 2vw, 16px);
+    font-weight: bold;
+}
+
+.banner-content button:hover {
+    background-color: white;
+    color: black;
+}
+
+/* banner end */
+
+
+/* About  */
+
+
+.about-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: justify-all;
+    gap: 5px;
+    margin-top: 6%;
+}
+
+.about-container h3,
+.about-container h1 {
+    color: rgba(108, 4, 4, 0.658);
+    font-family: font1;
+}
+
+.about-container h1 {
+    font-size: clamp(30px, 4vw, 40px);
+}
+
+.about-container h3 {
+    font-size: 30px;
+}
+
+.about-container button {
+    background-color: rgba(108, 4, 4, 0.767);
+    color: white;
+    padding: 8px 35px;
+    border-radius: 10px;
+    transition: 0.3s;
+    font-size: clamp(12px, 2vw, 15px);
+    /* font-weight: bold; */
+    font-family: font1;
+    border: none;
+    border: 2px solid rgba(108, 4, 4, 0.658);
+    ;
+}
+
+.about-container button:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
+@media screen and (max-width: 950px) and (min-width: 100px) {
+    .about-container p{
+        width: 90%!important;
+        padding-bottom: 20px;
+    }
+   .card-container{
+        margin-top: 60px!important;
+    }
+    .card-container .card{
+        padding-bottom: 30px!important;
+    }
+}
+
+
+/* About end */
+
+/* card */
+
+.card-container {
+    width: 95%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    margin-left: 40px;
+    gap: 20px;
+    font-family: poppines;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.card img {
+    width: 60%;
+}
+
+.card p {
+    font-size: 20px;
+    font-family: semibold;
+
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-family: poppines;
+
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.card .icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    float: right;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    left: 85%;
+}
+
+.card button {
+    background-color: rgba(108, 4, 4, 0.867);
+    color: white;
+    font-family: font1;
+    padding: 11px 35px;
+    border-radius: 10px;
+    transition: 0.3s;
+    font-size: clamp(12px, 2vw, 16px);
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.card button:hover {
+    background-color: white;
+    color: black;
+}
+
+.about {
+    margin-top: 6%;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.397);
+    background-blend-mode: overlay;
+    background-image: url('./img/palatable-food-breakfast.jpg');
+    /* width:100% ; */
+    width: clamp(100%, 4vw, 400px);
+    min-height: 600px;
+}
+
+.about h1 {
+    background-image: -webkit-linear-gradient(0deg, #f39f22 21%, #f0458f 49%, #e40abf 60%);
+    font-size: clamp(20px, 3vw, 85px);
+    font-family: font1;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+/* card end */
+
+/* contest1 */
+.contest-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.inside-container {
+    display: flex;
+    flex-direction: row;
+    max-width: 2500px;
+    width: 100%;
+    padding: 20px;
+    gap: 20px;
+    box-sizing: border-box;
+}
+
+.left-side,
+.right-side {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left-side img {
+    max-width: 100%;
+    height: auto;
+    width: 80%;
+}
+
+.right-side h4,
+.right-side h5,
+.right-side h1 {
+    margin: 10px 0;
+    text-align: center;
+    font-family:poppines;
+    transition: 0.5s;
+}
+
+.right-side h4 {
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+.right-side h5 {
+    font-size: clamp(1rem, 3vw, 2rem);
+}
+
+.right-side h1 {
+    font-size: clamp(2rem, 3vw, 4rem);
+    color: black;
+}
+
+.btn {
+    margin-top: 20px;
+}
+
+button {
+    padding: 12px 40px;
+    background-color: rgba(108, 4, 4, 0.867);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: 600;
+    border: 2px solid rgba(108, 4, 4, 0.867);
+    font-family: font1;
+}
+
+button:hover {
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+}
+
+/* contest1 end */
+
+/* contest2 */
+
+
+.inside-right-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    max-width: 2500px;
+    margin: auto;
+}
+
+.left-side,
+.right-side {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.left-side h1 {
+    margin: 10px 0;
+    text-align: center;
+    font-family: poppines;
+    transition: 0.5s;
+    color: black;
+    font-size: clamp(2rem, 3vw, 4rem);
+}
+
+.right-side img {
+    max-width: 100%;
+    height: auto;
+    width: 80%;
+}
+
+.button1 {
+    margin-top: 20px;
+    /* font-weight: 600; */
+}
+/* contest2 end */
+
+
+
+
+
+/* subscribe */
+
+
+.submit {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: sans-serif;
+}
+
+.subscribe {
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.397);
+    background-blend-mode: overlay;
+    background-image: url('https://img.freepik.com/premium-photo/cake-decorated-with-flowers-fresh-fruits_715782-207.jpg?ga=GA1.1.64353436.1667538898&semt=ais_user');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    opacity: 0.9;
+    color: white;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column !important;
+}
+
+.subscribe h1 {
+    font-size: clamp(20px, 3vw, 24px);
+}
+
+.input {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input input {
+    width: 80%;
+    height: 40px;
+    border-radius: 10px 0px 0px 10px;
+    border: none;
+    outline: none;
+    padding-left: 30px;
+}
+
+.input button {
+    width: 20%;
+    height: 40px;
+    border-radius: 0px 10px 10px 0px;
+    border: none;
+    outline: none;
+    padding: 0px 20px 0px 20px;
+    background-color: #441F13;
+    color: white;
+    font-family: font1;
+}
+
+.input button:hover {
+    background-color: white;
+    color: #441F13;
+}
+
+@media screen and (max-width: 950px) and (min-width:100px) {
+    .subscribe {
+        width: 98%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .input {
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .input input {
+        width: 30%;
+        border-radius: 5px;
+        padding-left: 10px;
+    }
+
+    .input .f-btn {
+        width: 30%;
+        width: clamp(5%,4vw,20%);
+        border-radius: 5px;
+        font-size: clamp(6px,4vw,13px);
+    }
+
+}
+
+@media screen and (max-width: 768px) and (min-width:100px) {
+    .input input {
+        width: 40%;
+        border-radius: 5px;
+        padding-left: 10px;
+    }
+
+    .input .f-btn {
+        width: 20%;
+        /* width: clamp(5%,4vw,20%); */
+        border-radius: 5px;
+        font-size: clamp(6px,4vw,13px);
+    }
+
+}
+
+@media screen and (max-width: 524px) and (min-width:100px) {
+
+    .input input {
+        width: 40%;
+        border-radius: 5px;
+        padding-left: 10px;
+    }
+
+    .input .f-btn {
+        width: 35%;
+        border-radius: 5px;
+        font-size: 10px!important;
+    }
+}
+
+
+@media screen and (max-width: 524px) 
+{
+    .input .f-btn {
+        width: 25%;
+        border-radius: 5px;
+        font-size: 10px!important;
+    }
+}
+/* subscribe end */
+
+
+/* footer */
+.footer {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,
+            minmax(450px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    color: white;
+    background-color: #441F13;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.footer .logo img {
+    width: 20%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin-left: 35%;
+}
+
+.footer .tittle {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+}
+
+.footer .logo,
+.help,
+.rosource,
+.social {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.footer .logo,
+.help>a,
+.rosource>a,
+.social>a {
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.copyrights {
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-color: #441F13;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.copyrights p {
+    font-size: clamp(10px, 1vw, 20px);
+}
+
+@media screen and (max-width: 1000px) and (min-width:100px) {
+    .card .icon {
+        width: 30px;
+        height: 30px;
+        left: 75%;
+    }
+
+    .card-container {
+        margin-left: 5px;
+    }
+
+    .card {
+        padding: 30px 0px;
+    }
+
+    .card .icon i {
+        font-size: 10px;
+    }
+
+    .card p {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .card button {
+        padding: 5px 25px;
+        font-size: 10px;
+    }
+
+    .about {
+        min-height: 200px;
+
+    }
+}
+
+@media screen and (max-width:1440px) {
+    .footer {
+        grid-template-columns: repeat(auto-fit,
+                minmax(180px, 1fr));
+        /* padding-left: 0px; */
+        justify-content: center;
+        row-gap: 50px;
+    }
+.footer .logo img {
+    width: 30%;
+}
+    .footer .help,
+    .rosource,
+    .social {
+        padding-left: 30px;
+    }
+
+    .copyrights {
+        width: 100%;
+    }
+
+    .card,
+    .card-one,
+    .card-two {
+        padding: 0px !important;
+        ;
+    }
+}
+
+/* footer end */
+
+
+@media (max-width: 768px) {
+
+    nav #ham-icon {
+        display: inline-block;
+        order: 3;
+        color: white;
+        z-index: 3 !important;
+    }
+
+    nav {
+        z-index: 2;
+       gap: 100px;
+    }
+
+    nav ul {
+        position: absolute;
+        height: 280px;
+        width: 100%;
+        top: -500%;
+        flex-direction: column;
+        gap: 5px;
+        transition-duration: 1s;
+        z-index: -1;
+    }
+
+    nav ul li {
+        height: 150px;
+        width: 57%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: -1;
+    }
+
+    #check-btn:checked~ul {
+        top: 80px;
+        left: 0px;
+        background-color: rgba(108, 4, 4, 0.867);
+    }
+
+    .about {
+        margin-top: 6%;
+    }
+
+    /* contest1 */
+    .inside-container {
+        flex-direction: column;
+    }
+
+    .left-side,
+    .right-side {
+        flex: none;
+        width: 100%;
+    }
+
+    .left-side {
+        order: 2;
+    }
+
+    .right-side {
+        order: 1;
+    }
+
+    .right-side h4,
+    .right-side h5,
+    .right-side h1 {
+        font-size: 1.5rem;
+    }
+
+    /* contest2 */
+    .inside-right-container {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .left-side,
+    .right-side {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .left-side h1 {
+        font-size: 1.2rem;
+    }
+
+
+}
+
+@media (max-width: 480px) {
+
+    .right-side h4,
+    .right-side h5,
+    .right-side h1 {
+        font-size: 1rem;
+    }
+    button {
+        /* width: 100%; */
+        padding: 5px 20px ;
+        font-size: 10px;
+    }
+}

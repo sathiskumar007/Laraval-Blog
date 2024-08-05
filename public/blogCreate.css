@@ -1,0 +1,46 @@
+.grip1440 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    gap: 20px;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.card-container {
+    width: 600px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0px;
+    -webkit-box-shadow: -1px 0 10px 3px #dddddd;
+    -moz-box-shadow: -1px 0 10px 3px #dddddd;
+    box-shadow: -1px 0 10px 3px #dddddd;
+    /* border: 2px solid rgba(0, 0, 0, 0.295); */
+    border-radius: 20px;
+}
+
+input[type='text'],
+input[type='file'] {
+    width: 250px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    /* gap: 10px; */
+}
+
+.btnn {
+    width: 100%;
+}
+.btn{
+    background-color: #441F13;
+    color:white;
+}
